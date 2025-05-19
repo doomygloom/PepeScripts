@@ -1,6 +1,8 @@
 # PepeScripts
 Various python scripts for trading PEPE on Coinbase
 
+![image](https://github.com/user-attachments/assets/d43bd744-d0d3-4c87-bd1a-93f9df163d6a)
+
 # DISCLAIMER
 
 The trading scripts provided in this repository are for educational and informational purposes only. They are open source and freely available for use, modification, and distribution under the terms of the specified open source license.
