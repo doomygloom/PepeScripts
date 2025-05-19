@@ -1,0 +1,12 @@
+{                                                                                                                      
+    "PRODUCT": "PEPE-USD",                                                                                                     
+    "PORTFOLIO_UUID": "",                                                                                              
+    "USER_AGENT": "",                                                                                                  
+    "NEW_KEY_NAME": "",                                                                                                
+    "NEW_KEY_SECRET": "",                                                                                              
+    "CB_PRODUCT_DECIMALS": "8",
+    "NUM_ORDERS": "1",
+    "ENABLE_PROXY": "false",                                                                                            
+    "PROXY_IP": "",                                                                                                    
+    "SELLMON_AUTO_REFRESH": "false"
+}
