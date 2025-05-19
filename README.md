@@ -3,6 +3,37 @@ Various python scripts for trading PEPE on Coinbase
 
 ![image](https://github.com/user-attachments/assets/d43bd744-d0d3-4c87-bd1a-93f9df163d6a)
 
+## `pepe_balance.py`
+Monitors the balance of a specified portfolio, tracks PEPE profit and loss over time, and records the data for later analysis. It also fetches the current PEPE market price and logs transaction fees/tier
+
+Usage: `python pepe_balance.py --startingbalance 2800.00`
+
+## `pepe_buy_at_market.py`
+Creates a market buy order for PEPE
+
+Usage: `python pepe_buy_at_market.py --amount 10` (in dollars)
+
+## `pepe_cancel_and_sell_order.py`
+Cancels and then sells a specified sell order at market price
+
+Usage: `python pepe_cancel_and_sell_order.py --order-id <order UUID>`
+
+Note: Get order you want to cancel UUID from `pepe_order_book.py`.
+
+## `pepe_cancel_order.py`
+Just cancels a sell order
+
+Usage: `python pepe_cancel_order.py --order-id <order UUID>`
+
+Note: Get order you want to cancel UUID from `pepe_order_book.py`.
+
+## `pepe_order_book.py`
+Monitors your open PEPE sell orders in the Coinbase order book and retrieves and displays the most recent open sell orders, including the base size and limit price, and identifies the five closest orders based on limit price.
+
+Usage: `python pepe_order_book.py`
+
+---
+
 # DISCLAIMER
 
 The trading scripts provided in this repository are for educational and informational purposes only. They are open source and freely available for use, modification, and distribution under the terms of the specified open source license.
