@@ -32,6 +32,21 @@ Monitors your open PEPE sell orders in the Coinbase order book and retrieves and
 
 Usage: `python pepe_order_book.py`
 
+## `pepe_sell_mon.py`
+Scans previously executed buy orders and places corresponding sell limit orders at a user-defined percentage above the purchase price.
+
+Usage: `python pepe_sell_mon.py --percentage 5`
+
+Supported percentage targets for placing limit orders:
+
+- 0.8%
+- 1%
+- 1.3%
+- 1.5%
+- 2%
+- 3%
+- 5%
+
 ---
 
 # DISCLAIMER
