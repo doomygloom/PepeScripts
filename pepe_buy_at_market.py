@@ -16,6 +16,8 @@ import secrets
 import os
 import random
 
+# X: @owldecoy
+
 logging.basicConfig(
         filename='logs/PEPE_BUY_AT_MARKET.log', 
         filemode='w', 
