@@ -47,6 +47,38 @@ Supported percentage targets for placing limit orders:
 - 3%
 - 5%
 
+## `config-example.json`
+This is the config file. Rename it to `config.json` and add your `PORTFOLIO_UUID`, private key name (`NEW_KEY_NAME`) and secret (`NEW_KEY_SECRET`). 
+
+```json
+{
+    "PRODUCT": "PEPE-USD",
+    "PORTFOLIO_UUID": "",
+    "USER_AGENT": "",
+    "NEW_KEY_NAME": "",
+    "NEW_KEY_SECRET": "",
+    "CB_PRODUCT_DECIMALS": "8",
+    "NUM_ORDERS": "1",
+    "ENABLE_PROXY": "false",
+    "PROXY_IP": "",
+    "SELLMON_AUTO_REFRESH": "false"
+}
+```
+
+| Field                      | Description                                                                                                                                                                                            |
+| -------------------------- | ------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------ |
+| **`PRODUCT`**              | `"PEPE-USD"` — The trading pair on Coinbase. This specifies the asset you're trading, in this case, PEPE token against USD. Used in API calls like placing orders, retrieving order book data, etc.    |
+| **`PORTFOLIO_UUID`**       | Placeholder for a **Coinbase Advanced Trade portfolio UUID** (used in newer Coinbase API v3).                                                        |
+| **`USER_AGENT`**           | User-Agent string sent with HTTP requests. Often used to mimic a browser or identify the client app.                                                                                                   |
+| **`NEW_KEY_NAME`**         | Name or label of the API key. (Provided with API key from Coinbase)                                                                                              |
+| **`NEW_KEY_SECRET`**       | Secret associated with the Coinbase API key. Used to sign requests for authenticated endpoints (placing orders, checking balances, etc.).                                                              |
+| **`CB_PRODUCT_DECIMALS`**  | `"8"` — Number of decimal places for the product. Important when placing orders, as precision matters (especially for tokens like PEPE). Coinbase expects quantities/prices in correct decimal format. |
+| **`NUM_ORDERS`**           | `"1"` — Defines how many orders the `pepe_buy_at_market.py` script places at a time.                                                                                    |
+| **`ENABLE_PROXY`**         | `"false"` — Whether to route API traffic through a proxy (e.g., for privacy or geo-routing).                                                                                                           |
+| **`PROXY_IP`**             | The IP address of the proxy server if `ENABLE_PROXY` is `"true"`.                                                                                                                                      |
+| **`SELLMON_AUTO_REFRESH`** | `"false"` — Logic toggle related to `pepe_sell_mon.py` that auto-scans for new buy orders rather than using manual mode.                                               |
+
+
 ---
 
 # DISCLAIMER
