@@ -10,6 +10,8 @@ import jwt
 from cryptography.hazmat.primitives import serialization
 import secrets
 
+# X: @owldecoy
+
 logging.basicConfig(
         filename='logs/PEPE_ORDER_BOOK.log', 
         filemode='w', 
